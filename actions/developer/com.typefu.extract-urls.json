@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "developer",
+  "icon": "link.badge.plus",
+  "id": "com.typefu.extract-urls",
+  "kind": "javaScript",
+  "name": "Extract Links",
+  "output": "copy",
+  "schemaVersion": 1,
+  "script": "const links = text.match(/https?:\\/\\/[^\\s<>\"')\\]]+/g) || []\nreturn [...new Set(links.map(link => link.replace(/[.,;:!?]+$/, \"\")))].join(\"\\n\")",
+  "summary": "Copies every link in the selection, one per line.",
+  "version": "1.0.0"
+}

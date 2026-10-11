@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "markdown",
+  "icon": "chevron.left.forwardslash.chevron.right",
+  "id": "com.typefu.markdown-inline-code",
+  "kind": "javaScript",
+  "name": "Inline Code",
+  "output": "replace",
+  "schemaVersion": 1,
+  "script": "\"`\" + text + \"`\"",
+  "summary": "Wraps the selection in backticks.",
+  "version": "1.0.0"
+}

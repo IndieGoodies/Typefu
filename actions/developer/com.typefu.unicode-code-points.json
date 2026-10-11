@@ -1,0 +1,16 @@
+{
+  "author": "Typefu",
+  "category": "developer",
+  "icon": "character.magnify",
+  "id": "com.typefu.unicode-code-points",
+  "kind": "javaScript",
+  "name": "Unicode Code Points",
+  "output": "show",
+  "requirements": {
+    "maxLength": 200
+  },
+  "schemaVersion": 1,
+  "script": "Array.from(text).map(c => \"U+\" + c.codePointAt(0).toString(16).toUpperCase().padStart(4, \"0\")).join(\" \")",
+  "summary": "Shows the Unicode code point of each character.",
+  "version": "1.0.0"
+}

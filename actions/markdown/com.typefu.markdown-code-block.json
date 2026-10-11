@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "markdown",
+  "icon": "curlybraces.square",
+  "id": "com.typefu.markdown-code-block",
+  "kind": "javaScript",
+  "name": "Code Block",
+  "output": "replace",
+  "schemaVersion": 1,
+  "script": "\"```\\n\" + text + \"\\n```\"",
+  "summary": "Wraps the selection in a fenced code block.",
+  "version": "1.0.0"
+}

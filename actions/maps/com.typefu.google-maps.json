@@ -1,0 +1,16 @@
+{
+  "author": "Typefu",
+  "category": "maps",
+  "icon": "map",
+  "id": "com.typefu.google-maps",
+  "kind": "url",
+  "name": "Google Maps",
+  "output": "none",
+  "requirements": {
+    "maxLength": 200
+  },
+  "schemaVersion": 1,
+  "script": "https://www.google.com/maps/search/?api=1&query={text}",
+  "summary": "Finds the selection in Google Maps.",
+  "version": "1.0.0"
+}

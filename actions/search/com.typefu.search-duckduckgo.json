@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "search",
+  "icon": "magnifyingglass",
+  "id": "com.typefu.search-duckduckgo",
+  "kind": "url",
+  "name": "DuckDuckGo",
+  "output": "none",
+  "schemaVersion": 1,
+  "script": "https://duckduckgo.com/?q={text}",
+  "summary": "Searches DuckDuckGo for the selection.",
+  "version": "1.0.0"
+}

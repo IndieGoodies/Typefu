@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "markdown",
+  "icon": "text.quote",
+  "id": "com.typefu.markdown-blockquote",
+  "kind": "javaScript",
+  "name": "Blockquote",
+  "output": "replace",
+  "schemaVersion": 1,
+  "script": "text.split(\"\\n\").map(line => \"> \" + line).join(\"\\n\")",
+  "summary": "Quotes the selection in Markdown.",
+  "version": "1.0.0"
+}

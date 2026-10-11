@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "developer",
+  "icon": "chevron.left.slash.chevron.right",
+  "id": "com.typefu.escape-html",
+  "kind": "javaScript",
+  "name": "Escape HTML",
+  "output": "replace",
+  "schemaVersion": 1,
+  "script": "text.replace(/&/g, \"&amp;\").replace(/</g, \"&lt;\").replace(/>/g, \"&gt;\").replace(/\"/g, \"&quot;\").replace(/'/g, \"&#39;\")",
+  "summary": "Escapes &, <, >, and quotes as HTML entities.",
+  "version": "1.0.0"
+}

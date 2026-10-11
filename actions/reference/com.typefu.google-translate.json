@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "reference",
+  "icon": "character.bubble",
+  "id": "com.typefu.google-translate",
+  "kind": "url",
+  "name": "Google Translate",
+  "output": "none",
+  "schemaVersion": 1,
+  "script": "https://translate.google.com/?sl=auto&tl=en&text={text}&op=translate",
+  "summary": "Translates the selection to English in Google Translate.",
+  "version": "1.0.0"
+}

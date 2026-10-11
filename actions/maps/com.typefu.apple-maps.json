@@ -1,0 +1,16 @@
+{
+  "author": "Typefu",
+  "category": "maps",
+  "icon": "map",
+  "id": "com.typefu.apple-maps",
+  "kind": "url",
+  "name": "Apple Maps",
+  "output": "none",
+  "requirements": {
+    "maxLength": 200
+  },
+  "schemaVersion": 1,
+  "script": "https://maps.apple.com/?q={text}",
+  "summary": "Finds the selection in Apple Maps.",
+  "version": "1.0.0"
+}

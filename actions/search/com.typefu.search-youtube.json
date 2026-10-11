@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "search",
+  "icon": "play.rectangle",
+  "id": "com.typefu.search-youtube",
+  "kind": "url",
+  "name": "YouTube",
+  "output": "none",
+  "schemaVersion": 1,
+  "script": "https://www.youtube.com/results?search_query={text}",
+  "summary": "Searches YouTube for the selection.",
+  "version": "1.0.0"
+}

@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "apps",
+  "icon": "note.text",
+  "id": "com.typefu.bear-create",
+  "kind": "url",
+  "name": "New Bear Note",
+  "output": "none",
+  "schemaVersion": 1,
+  "script": "bear://x-callback-url/create?text={text}",
+  "summary": "Creates a Bear note with the selection.",
+  "version": "1.0.0"
+}

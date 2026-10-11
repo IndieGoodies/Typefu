@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "markdown",
+  "icon": "list.bullet",
+  "id": "com.typefu.markdown-bullet-list",
+  "kind": "javaScript",
+  "name": "Bullet List",
+  "output": "replace",
+  "schemaVersion": 1,
+  "script": "text.split(\"\\n\").map(line => line.trim() ? \"- \" + line.replace(/^\\s*([-*+]|\\d+\\.)\\s+/, \"\") : line).join(\"\\n\")",
+  "summary": "Turns lines into a Markdown bullet list.",
+  "version": "1.0.0"
+}

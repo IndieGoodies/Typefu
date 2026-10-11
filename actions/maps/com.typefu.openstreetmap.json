@@ -1,0 +1,16 @@
+{
+  "author": "Typefu",
+  "category": "maps",
+  "icon": "map",
+  "id": "com.typefu.openstreetmap",
+  "kind": "url",
+  "name": "OpenStreetMap",
+  "output": "none",
+  "requirements": {
+    "maxLength": 200
+  },
+  "schemaVersion": 1,
+  "script": "https://www.openstreetmap.org/search?query={text}",
+  "summary": "Finds the selection on OpenStreetMap.",
+  "version": "1.0.0"
+}

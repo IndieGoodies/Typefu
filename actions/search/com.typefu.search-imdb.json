@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "search",
+  "icon": "film",
+  "id": "com.typefu.search-imdb",
+  "kind": "url",
+  "name": "IMDb",
+  "output": "none",
+  "schemaVersion": 1,
+  "script": "https://www.imdb.com/find/?q={text}",
+  "summary": "Searches IMDb for the selection.",
+  "version": "1.0.0"
+}

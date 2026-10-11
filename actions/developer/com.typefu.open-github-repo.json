@@ -1,0 +1,16 @@
+{
+  "author": "Typefu",
+  "category": "developer",
+  "icon": "arrow.up.right.square",
+  "id": "com.typefu.open-github-repo",
+  "kind": "url",
+  "name": "Open GitHub Repo",
+  "output": "none",
+  "requirements": {
+    "regex": "[A-Za-z0-9-]+/[A-Za-z0-9._-]+"
+  },
+  "schemaVersion": 1,
+  "script": "https://github.com/{text}",
+  "summary": "Opens a GitHub repository from owner/repo.",
+  "version": "1.0.0"
+}

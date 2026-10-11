@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "text",
+  "icon": "quote.opening",
+  "id": "com.typefu.wrap-quotes",
+  "kind": "javaScript",
+  "name": "Wrap in Quotes",
+  "output": "replace",
+  "schemaVersion": 1,
+  "script": "\"“\" + text + \"”\"",
+  "summary": "Wraps the selection in curly quotes.",
+  "version": "1.0.0"
+}

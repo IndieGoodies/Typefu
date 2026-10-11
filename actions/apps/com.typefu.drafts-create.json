@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "apps",
+  "icon": "square.and.pencil",
+  "id": "com.typefu.drafts-create",
+  "kind": "url",
+  "name": "New Draft",
+  "output": "none",
+  "schemaVersion": 1,
+  "script": "drafts://x-callback-url/create?text={text}",
+  "summary": "Creates a draft in Drafts with the selection.",
+  "version": "1.0.0"
+}
