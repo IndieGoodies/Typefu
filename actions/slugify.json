@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "text",
+  "icon": "link",
+  "id": "slugify",
+  "kind": "javaScript",
+  "name": "Slugify",
+  "output": "replace",
+  "schemaVersion": 1,
+  "script": "text.normalize(\"NFD\").replace(/[\\u0300-\\u036f]/g, \"\").toLowerCase().replace(/[^a-z0-9]+/g, \"-\").replace(/^-+|-+$/g, \"\")",
+  "summary": "Turns the selection into a URL slug.",
+  "version": "1.0.0"
+}

@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "search",
+  "icon": "magnifyingglass",
+  "id": "search-google",
+  "kind": "url",
+  "name": "Google",
+  "output": "none",
+  "schemaVersion": 1,
+  "script": "https://www.google.com/search?q={text}",
+  "summary": "Searches Google for the selection.",
+  "version": "1.0.0"
+}

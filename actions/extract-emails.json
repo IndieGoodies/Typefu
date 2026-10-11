@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "developer",
+  "icon": "at",
+  "id": "extract-emails",
+  "kind": "javaScript",
+  "name": "Extract Email Addresses",
+  "output": "copy",
+  "schemaVersion": 1,
+  "script": "const emails = text.match(/[^\\s@<>(),;:\"]+@[^\\s@<>(),;:\"]+\\.[A-Za-z]{2,}/g) || []\nreturn [...new Set(emails)].join(\"\\n\")",
+  "summary": "Copies every email address in the selection, one per line.",
+  "version": "1.0.0"
+}

@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "text",
+  "icon": "arrow.up.arrow.down",
+  "id": "reverse-lines",
+  "kind": "javaScript",
+  "name": "Reverse Lines",
+  "output": "replace",
+  "schemaVersion": 1,
+  "script": "text.split(\"\\n\").reverse().join(\"\\n\")",
+  "summary": "Reverses the order of the lines.",
+  "version": "1.0.0"
+}

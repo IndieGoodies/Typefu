@@ -5,10 +5,11 @@ Thanks for sharing an action. Every accepted action ships inside Typefu, so each
 ## Steps
 
 1. Fork this repository.
-2. Add your file as `actions/<category>/<id>.json`. Use an id you own, such as `io.github.<your-github-name>.<action>`. Ids starting with `com.typefu.` are for actions maintained here.
-3. Test it in Typefu: **Library ▸ Custom Actions ▸ Import Actions…**, then use **Try It** in the editor.
-4. Run `python3 scripts/validate.py`.
-5. Open a pull request. Say what the action does, and give a sample selection with the result you expect.
+2. Add your file as `actions/<id>.json`, where the id is a short kebab-case name for the action, like `reverse-words`. If the name is taken, pick a more specific one.
+3. Add a row for it to the table in the README, under its category.
+4. Test it in Typefu: **Library ▸ Custom Actions ▸ Import Actions…**, then use **Try It** in the editor.
+5. Run `python3 scripts/validate.py`.
+6. Open a pull request. Say what the action does, and give a sample selection with the result you expect.
 
 To change an existing action, edit its file and bump `version`. Never change an `id`; Typefu uses it to match installed copies and the user's bar layout.
 

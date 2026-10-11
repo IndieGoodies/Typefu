@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "text",
+  "icon": "line.3.horizontal.decrease",
+  "id": "remove-empty-lines",
+  "kind": "javaScript",
+  "name": "Remove Empty Lines",
+  "output": "replace",
+  "schemaVersion": 1,
+  "script": "text.split(\"\\n\").filter(line => line.trim() !== \"\").join(\"\\n\")",
+  "summary": "Removes blank lines.",
+  "version": "1.0.0"
+}

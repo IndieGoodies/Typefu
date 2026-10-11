@@ -1,0 +1,16 @@
+{
+  "author": "Typefu",
+  "category": "developer",
+  "icon": "clock",
+  "id": "unix-timestamp",
+  "kind": "javaScript",
+  "name": "Unix Timestamp to Date",
+  "output": "show",
+  "requirements": {
+    "regex": "\\s*\\d{9,13}\\s*"
+  },
+  "schemaVersion": 1,
+  "script": "const value = Number(text.trim())\nconst date = new Date(value > 1e11 ? value : value * 1000)\nreturn date.toISOString()",
+  "summary": "Converts a Unix timestamp in seconds or milliseconds to an ISO 8601 date.",
+  "version": "1.0.0"
+}

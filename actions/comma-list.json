@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "text",
+  "icon": "list.bullet",
+  "id": "comma-list",
+  "kind": "javaScript",
+  "name": "Comma List",
+  "output": "replace",
+  "schemaVersion": 1,
+  "script": "if (text.includes(\"\\n\")) {\n  return text.split(\"\\n\").map(s => s.trim()).filter(Boolean).join(\", \")\n}\nreturn text.split(\",\").map(s => s.trim()).filter(Boolean).join(\"\\n\")",
+  "summary": "Turns lines into a comma-separated list, or a comma-separated list into lines.",
+  "version": "1.0.0"
+}

@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "text",
+  "icon": "textformat.abc.dottedunderline",
+  "id": "alternating-case",
+  "kind": "javaScript",
+  "name": "Alternating Case",
+  "output": "replace",
+  "schemaVersion": 1,
+  "script": "let upper = false\nreturn text.replace(/[a-z]/gi, c => (upper = !upper) ? c.toLowerCase() : c.toUpperCase())",
+  "summary": "wRiTeS tHe SeLeCtIoN lIkE tHiS.",
+  "version": "1.0.0"
+}

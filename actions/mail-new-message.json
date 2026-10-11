@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "apps",
+  "icon": "envelope",
+  "id": "mail-new-message",
+  "kind": "url",
+  "name": "New Mail Message",
+  "output": "none",
+  "schemaVersion": 1,
+  "script": "mailto:?body={text}",
+  "summary": "Starts a new email with the selection as the body.",
+  "version": "1.0.0"
+}

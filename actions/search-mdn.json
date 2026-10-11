@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "developer",
+  "icon": "globe",
+  "id": "search-mdn",
+  "kind": "url",
+  "name": "MDN",
+  "output": "none",
+  "schemaVersion": 1,
+  "script": "https://developer.mozilla.org/en-US/search?q={text}",
+  "summary": "Searches the MDN web docs for the selection.",
+  "version": "1.0.0"
+}

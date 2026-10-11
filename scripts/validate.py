@@ -19,6 +19,9 @@ def fail(path, message):
 
 for path in sorted((root / "actions").rglob("*")):
     if path.is_dir():
+        fail(path, "actions/ has no subfolders; put the file directly in actions/")
+        continue
+    if path.parent != root / "actions":
         continue
     if path.suffix != ".json":
         fail(path, "only .json files belong in actions/")
@@ -66,13 +69,16 @@ for path in sorted((root / "actions").rglob("*")):
     action_id = action.get("id", "")
     if path.name != f"{action_id}.json":
         fail(path, f"file must be named {action_id}.json")
-    if path.parent.name != action.get("category"):
-        fail(path, f"file must be in actions/{action.get('category')}/")
     if action_id in ids:
         fail(path, f"id {action_id} is also used by {ids[action_id].relative_to(root)}")
     ids[action_id] = path
     if action.get("kind") == "url" and "{text" not in action.get("script", ""):
         fail(path, "URL actions need {text} in the script")
+
+readme = (root / "README.md").read_text(encoding="utf-8")
+for action_id, path in ids.items():
+    if f"(actions/{action_id}.json)" not in readme:
+        fail(path, "add a row for it to the table in README.md")
 
 for error in errors:
     print(error)

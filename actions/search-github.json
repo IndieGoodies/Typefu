@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "developer",
+  "icon": "chevron.left.forwardslash.chevron.right",
+  "id": "search-github",
+  "kind": "url",
+  "name": "Search GitHub",
+  "output": "none",
+  "schemaVersion": 1,
+  "script": "https://github.com/search?q={text}",
+  "summary": "Searches GitHub for the selection.",
+  "version": "1.0.0"
+}

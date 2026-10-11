@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "text",
+  "icon": "shuffle",
+  "id": "shuffle-lines",
+  "kind": "javaScript",
+  "name": "Shuffle Lines",
+  "output": "replace",
+  "schemaVersion": 1,
+  "script": "const lines = text.split(\"\\n\")\nfor (let i = lines.length - 1; i > 0; i--) {\n  const j = Math.floor(Math.random() * (i + 1));\n  [lines[i], lines[j]] = [lines[j], lines[i]]\n}\nreturn lines.join(\"\\n\")",
+  "summary": "Puts the lines in random order.",
+  "version": "1.0.0"
+}

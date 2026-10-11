@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "markdown",
+  "icon": "list.number",
+  "id": "markdown-numbered-list",
+  "kind": "javaScript",
+  "name": "Numbered List",
+  "output": "replace",
+  "schemaVersion": 1,
+  "script": "let n = 0\nreturn text.split(\"\\n\").map(line => line.trim() ? `${++n}. ` + line.replace(/^\\s*([-*+]|\\d+\\.)\\s+/, \"\") : line).join(\"\\n\")",
+  "summary": "Turns lines into a numbered Markdown list.",
+  "version": "1.0.0"
+}

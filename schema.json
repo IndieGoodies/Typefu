@@ -4,48 +4,158 @@
   "title": "Typefu action",
   "description": "One selection bar action for Typefu. Typefu ignores keys it doesn't know, so newer files still load in older versions where possible.",
   "type": "object",
-  "required": ["schemaVersion", "id", "version", "name", "summary", "icon", "category", "author", "kind", "script"],
+  "required": [
+    "schemaVersion",
+    "id",
+    "version",
+    "name",
+    "summary",
+    "icon",
+    "category",
+    "author",
+    "kind",
+    "script"
+  ],
   "properties": {
-    "$schema": { "type": "string" },
-    "schemaVersion": { "const": 1, "description": "Format version. Only changes for breaking changes." },
+    "$schema": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "const": 1,
+      "description": "Format version. Only changes for breaking changes."
+    },
     "id": {
       "type": "string",
-      "pattern": "^[A-Za-z0-9]+([.-][A-Za-z0-9]+)*(\\.[A-Za-z0-9]+([.-][A-Za-z0-9]+)*)+$",
-      "description": "Reverse-DNS id that never changes, like com.typefu.rot13 or io.github.<user>.<name>. The file is named <id>.json."
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 60,
+      "description": "Kebab-case name that never changes, like rot13 or search-github. The file is actions/<id>.json."
     },
-    "version": { "type": "string", "pattern": "^\\d+(\\.\\d+){0,2}$", "description": "The action's own version. Bump it when you change the action." },
-    "minAppVersion": { "type": "string", "pattern": "^\\d+(\\.\\d+){0,2}$", "description": "The oldest Typefu version that can run the action." },
-    "name": { "type": "string", "minLength": 1, "maxLength": 40 },
-    "summary": { "type": "string", "minLength": 1, "maxLength": 140, "description": "One sentence about what the action does." },
-    "icon": { "type": "string", "minLength": 1, "description": "An SF Symbol name, like magnifyingglass." },
-    "category": { "enum": ["text", "markdown", "developer", "search", "reference", "maps", "apps"] },
-    "author": { "type": "string", "minLength": 1 },
-    "kind": { "enum": ["url", "javaScript", "shell", "appleScript", "shortcut"] },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+(\\.\\d+){0,2}$",
+      "description": "The action's own version. Bump it when you change the action."
+    },
+    "minAppVersion": {
+      "type": "string",
+      "pattern": "^\\d+(\\.\\d+){0,2}$",
+      "description": "The oldest Typefu version that can run the action."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 40
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 140,
+      "description": "One sentence about what the action does."
+    },
+    "icon": {
+      "type": "string",
+      "minLength": 1,
+      "description": "An SF Symbol name, like magnifyingglass."
+    },
+    "category": {
+      "enum": [
+        "text",
+        "markdown",
+        "developer",
+        "search",
+        "reference",
+        "maps",
+        "apps"
+      ]
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "url",
+        "javaScript",
+        "shell",
+        "appleScript",
+        "shortcut"
+      ]
+    },
     "script": {
       "type": "string",
       "minLength": 1,
       "description": "url: a URL with {text} (URL-encoded) or {text | pipe}. javaScript: code using text, or function run(text). shell: zsh with the text on stdin and in $EXPANDER_TEXT. appleScript: code using selectedText. shortcut: the Shortcut's name."
     },
-    "output": { "enum": ["replace", "insertAfter", "copy", "show", "none"], "description": "What happens with the result. URL actions use none." },
-    "timeout": { "type": "number", "minimum": 1, "maximum": 120, "description": "Seconds before shell, AppleScript and Shortcut actions are stopped." },
+    "output": {
+      "enum": [
+        "replace",
+        "insertAfter",
+        "copy",
+        "show",
+        "none"
+      ],
+      "description": "What happens with the result. URL actions use none."
+    },
+    "timeout": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 120,
+      "description": "Seconds before shell, AppleScript and Shortcut actions are stopped."
+    },
     "requirements": {
       "type": "object",
       "description": "When the action is offered. Leave out keys you don't need.",
       "properties": {
-        "minLength": { "type": ["integer", "null"], "minimum": 0 },
-        "maxLength": { "type": ["integer", "null"], "minimum": 1 },
-        "regex": { "type": ["string", "null"], "description": "Must match the whole (trimmed) selection." },
-        "isURL": { "type": "boolean" },
-        "isEmail": { "type": "boolean" },
-        "isPath": { "type": "boolean" },
-        "includeApps": { "type": "array", "items": { "type": "string" }, "description": "Only in these apps (bundle identifiers)." },
-        "excludeApps": { "type": "array", "items": { "type": "string" } }
+        "minLength": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "maxLength": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "regex": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Must match the whole (trimmed) selection."
+        },
+        "isURL": {
+          "type": "boolean"
+        },
+        "isEmail": {
+          "type": "boolean"
+        },
+        "isPath": {
+          "type": "boolean"
+        },
+        "includeApps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Only in these apps (bundle identifiers)."
+        },
+        "excludeApps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
       },
       "additionalProperties": false
     },
     "permissions": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "Reserved for capabilities beyond text work, like network. Shown to the user before installing."
     }
   }

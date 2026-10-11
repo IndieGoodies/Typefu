@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "developer",
+  "icon": "text.line.first.and.arrowtriangle.forward",
+  "id": "toggle-line-comment",
+  "kind": "javaScript",
+  "name": "Toggle // Comment",
+  "output": "replace",
+  "schemaVersion": 1,
+  "script": "const lines = text.split(\"\\n\")\nconst commented = lines.every(line => !line.trim() || /^\\s*\\/\\/ ?/.test(line))\nreturn lines.map(line => {\n  if (!line.trim()) return line\n  return commented ? line.replace(/^(\\s*)\\/\\/ ?/, \"$1\") : line.replace(/^(\\s*)/, \"$1// \")\n}).join(\"\\n\")",
+  "summary": "Comments or uncomments lines with //.",
+  "version": "1.0.0"
+}

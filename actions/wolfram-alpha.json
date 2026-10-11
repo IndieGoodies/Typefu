@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "reference",
+  "icon": "function",
+  "id": "wolfram-alpha",
+  "kind": "url",
+  "name": "Wolfram Alpha",
+  "output": "none",
+  "schemaVersion": 1,
+  "script": "https://www.wolframalpha.com/input?i={text}",
+  "summary": "Asks Wolfram Alpha about the selection.",
+  "version": "1.0.0"
+}

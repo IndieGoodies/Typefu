@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "developer",
+  "icon": "apple.logo",
+  "id": "search-apple-developer",
+  "kind": "url",
+  "name": "Apple Developer",
+  "output": "none",
+  "schemaVersion": 1,
+  "script": "https://developer.apple.com/search/?q={text}",
+  "summary": "Searches Apple's developer documentation for the selection.",
+  "version": "1.0.0"
+}

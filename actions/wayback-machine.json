@@ -1,0 +1,16 @@
+{
+  "author": "Typefu",
+  "category": "reference",
+  "icon": "clock.arrow.circlepath",
+  "id": "wayback-machine",
+  "kind": "url",
+  "name": "Wayback Machine",
+  "output": "none",
+  "requirements": {
+    "isURL": true
+  },
+  "schemaVersion": 1,
+  "script": "https://web.archive.org/web/*/{text}",
+  "summary": "Shows archived copies of a link on the Wayback Machine.",
+  "version": "1.0.0"
+}

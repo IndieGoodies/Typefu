@@ -1,0 +1,16 @@
+{
+  "author": "Typefu",
+  "category": "reference",
+  "icon": "doc.text.magnifyingglass",
+  "id": "doi",
+  "kind": "url",
+  "name": "Open DOI",
+  "output": "none",
+  "requirements": {
+    "regex": "10\\.\\d{4,9}/\\S+"
+  },
+  "schemaVersion": 1,
+  "script": "https://doi.org/{text}",
+  "summary": "Opens the paper for a DOI like 10.1000/182.",
+  "version": "1.0.0"
+}

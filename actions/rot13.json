@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "text",
+  "icon": "arrow.2.circlepath",
+  "id": "rot13",
+  "kind": "javaScript",
+  "name": "ROT13",
+  "output": "replace",
+  "schemaVersion": 1,
+  "script": "return text.replace(/[a-z]/gi, c => {\n  const base = c <= \"Z\" ? 65 : 97\n  return String.fromCharCode((c.charCodeAt(0) - base + 13) % 26 + base)\n})",
+  "summary": "Shifts letters by 13 places. Run it again to undo.",
+  "version": "1.0.0"
+}

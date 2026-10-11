@@ -1,0 +1,13 @@
+{
+  "author": "Typefu",
+  "category": "developer",
+  "icon": "questionmark.bubble",
+  "id": "search-stackoverflow",
+  "kind": "url",
+  "name": "Stack Overflow",
+  "output": "none",
+  "schemaVersion": 1,
+  "script": "https://stackoverflow.com/search?q={text}",
+  "summary": "Searches Stack Overflow for the selection.",
+  "version": "1.0.0"
+}
